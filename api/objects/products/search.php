@@ -30,11 +30,7 @@ if($num>0){
     $products_arr["records"]=array();
   
       while ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
-        // extract row
-        // this will make $row['name'] to
-        // just $name only
         extract($row);
-  
         $product_item=array(
             "id" => $id,
             "name" => $name,
